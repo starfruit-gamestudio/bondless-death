@@ -353,9 +353,10 @@ public class Player : Mob
 
             }
             spr.flipX = (dir == "LEFT");
-            finalPos = transform.position + (Vector3)direction;
+            
             if (direction != Vector2.zero)
             {
+                finalPos = transform.position + (Vector3)direction;
                 anim.SetTrigger("Turn");
             }
         }
