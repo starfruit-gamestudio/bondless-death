@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LevelReader
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: e6338a29bda7f7548952fc9ecd386a11,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: sprite
+    value: 
+    objectReference: {fileID: 21300000, guid: cb22e0c514f954743a595ebd40902f0b, type: 3}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.size
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[0].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[0].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[0].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[0].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[0].prefab
+    value: 
+    objectReference: {fileID: 2012812678009906844, guid: 421bcd3904ed4bc4ebe72cf912c60466,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[1].color.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[1].color.g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[1].color.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[1].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[1].prefab
+    value: 
+    objectReference: {fileID: 2012812678009906844, guid: 421bcd3904ed4bc4ebe72cf912c60466,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[2].color.r
+    value: 0.48627454
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[2].color.g
+    value: 0.043137256
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[2].color.b
+    value: 0.47450984
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[2].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[2].prefab
+    value: 
+    objectReference: {fileID: 2012812678009906844, guid: 421bcd3904ed4bc4ebe72cf912c60466,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[3].color.r
+    value: 0.3137255
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[3].color.g
+    value: 0.4784314
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[3].color.b
+    value: 0.79215693
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[3].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[3].prefab
+    value: 
+    objectReference: {fileID: 2012812678009906844, guid: 421bcd3904ed4bc4ebe72cf912c60466,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[4].color.r
+    value: 0.27450982
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[4].color.g
+    value: 0.7803922
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[4].color.b
+    value: 0.19215688
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[4].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[4].prefab
+    value: 
+    objectReference: {fileID: 2012812678009906844, guid: 421bcd3904ed4bc4ebe72cf912c60466,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[5].color.r
+    value: 0.8352942
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[5].color.g
+    value: 0.18039216
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[5].color.b
+    value: 0.18039216
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[5].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[5].prefab
+    value: 
+    objectReference: {fileID: 2012812678009906844, guid: 421bcd3904ed4bc4ebe72cf912c60466,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[6].color.r
+    value: 0.3529412
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[6].color.g
+    value: 0.22352943
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[6].color.b
+    value: 0.14901961
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[6].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsAndObjects.Array.data[6].prefab
+    value: 
+    objectReference: {fileID: 2012812678009906844, guid: 421bcd3904ed4bc4ebe72cf912c60466,
+      type: 3}

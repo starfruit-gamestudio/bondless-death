@@ -1,0 +1,405 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LevelCreatorManager
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 1393733ad12695940bcb924c2d839fac,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: size
+    value: 16
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: tilePrefab
+    value: 
+    objectReference: {fileID: 2012812678009906844, guid: 421bcd3904ed4bc4ebe72cf912c60466,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: selectedColor.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: selectedColor.g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: selectedColor.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: selectedColor.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: selectedSprite
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: mainCamera
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: lay.m_Bits
+    value: 4294967295
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: objectPickUpPrefab
+    value: 
+    objectReference: {fileID: 6839725160502099245, guid: 1dde4e55a629d3b41ba7f58f9b4c0c1b,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: panelParent
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.size
+    value: 9
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[0].r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[0].g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[0].b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[0].a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[1].r
+    value: 0.8352942
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[1].g
+    value: 0.18039216
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[1].b
+    value: 0.18039216
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[1].a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[2].r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[2].g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[2].b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[2].a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[3].r
+    value: 0.3137255
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[3].g
+    value: 0.4784314
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[3].b
+    value: 0.79215693
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[3].a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[4].r
+    value: 0.3529412
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[4].g
+    value: 0.22352943
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[4].b
+    value: 0.14901961
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[4].a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[5].r
+    value: 0.5372549
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[5].g
+    value: 0.5372549
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[5].b
+    value: 0.5372549
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[5].a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[6].r
+    value: 0.27450982
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[6].g
+    value: 0.7803922
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[6].b
+    value: 0.19215688
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[6].a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[7].r
+    value: 0.18431373
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[7].g
+    value: 0.5137255
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[7].b
+    value: 0.12941177
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[7].a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[8].r
+    value: 0.48627454
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[8].g
+    value: 0.043137256
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[8].b
+    value: 0.47450984
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: colorsToShow.Array.data[8].a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.size
+    value: 9
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[0].sprite
+    value: 
+    objectReference: {fileID: 21300000, guid: fe4655e13add98f49aa557190b07f348, type: 3}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[0].color.r
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[0].color.g
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[0].color.b
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[0].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[1].sprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 7806cd71629930841b88cebfca3ba1f6, type: 3}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[1].color.r
+    value: 0.8352942
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[1].color.g
+    value: 0.18039216
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[1].color.b
+    value: 0.18039216
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[1].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[2].sprite
+    value: 
+    objectReference: {fileID: 21300122, guid: fe4655e13add98f49aa557190b07f348, type: 3}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[2].color.r
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[2].color.g
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[2].color.b
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[2].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[3].sprite
+    value: 
+    objectReference: {fileID: 21300016, guid: 713583f7101bfc14cbed8b02289a5598, type: 3}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[3].color.r
+    value: 0.3137255
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[3].color.g
+    value: 0.4784314
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[3].color.b
+    value: 0.79215693
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[3].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[4].sprite
+    value: 
+    objectReference: {fileID: 21300000, guid: 6bb0fbbe8ed59a549b71695c4a694210, type: 3}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[4].color.r
+    value: 0.30980393
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[4].color.g
+    value: 0.19607845
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[4].color.b
+    value: 0.12941177
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[4].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[5].sprite
+    value: 
+    objectReference: {fileID: 21300092, guid: fe4655e13add98f49aa557190b07f348, type: 3}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[5].color.r
+    value: 0.5372549
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[5].color.g
+    value: 0.5372549
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[5].color.b
+    value: 0.5372549
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[5].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[6].sprite
+    value: 
+    objectReference: {fileID: 21300002, guid: 9e56b051cdb40264492be6e9c78d9b28, type: 3}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[6].color.r
+    value: 0.27450982
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[6].color.g
+    value: 0.7803922
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[6].color.b
+    value: 0.19215688
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[6].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[7].sprite
+    value: 
+    objectReference: {fileID: 21300020, guid: 0d003eb8d135ea241853cab677d07a59, type: 3}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[7].color.r
+    value: 0.18431373
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[7].color.g
+    value: 0.5137255
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[7].color.b
+    value: 0.12941177
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[7].color.a
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[8].sprite
+    value: 
+    objectReference: {fileID: 21300004, guid: af24b144edaebf442b454d2d74e4287d, type: 3}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[8].color.r
+    value: 0.48627454
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[8].color.g
+    value: 0.043137256
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[8].color.b
+    value: 0.47450984
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spritesAndColors.Array.data[8].color.a
+    value: 1
+    objectReference: {fileID: 0}
