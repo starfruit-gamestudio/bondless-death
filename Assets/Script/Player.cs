@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Player : Mob
 {
@@ -20,6 +23,7 @@ public class Player : Mob
     bool ending;
     bool canExit;
     Vector3 lastPos;
+    Vector2 mousePos;
 
     SpriteRenderer spr;
     Animator anim;
@@ -48,9 +52,12 @@ public class Player : Mob
         anim = GetComponent<Animator>();
         spr = GetComponent<SpriteRenderer>();
         direction = Vector2.zero;
-        
-        
-        
+
+        GameObject.Find("UpPad").GetComponent<CustomButton>().click.AddListener(() => DPad("UP"));
+        GameObject.Find("DownPad").GetComponent<CustomButton>().click.AddListener(() => DPad("DOWN"));
+        GameObject.Find("RightPad").GetComponent<CustomButton>().click.AddListener(() => DPad("RIGHT"));
+        GameObject.Find("LeftPad").GetComponent<CustomButton>().click.AddListener(() => DPad("LEFT"));
+
     }
 
     // Update is called once per frame
@@ -75,7 +82,8 @@ public class Player : Mob
                     }
                     if (!walking)
                     {
-                        GetDirection();
+
+                        //PlayerInput();
                         CheckMove();
                         
                     }
@@ -120,7 +128,10 @@ public class Player : Mob
             stepAudioSource.Play();
         finalPos = pos;
         if (finalPos == transform.position)
+        {
+            direction = Vector2.zero;
             walking = false;
+        }
     }
 
     IEnumerator EndGame()
@@ -239,64 +250,114 @@ public class Player : Mob
         exiting = true;
         yield return waitForSeconds;
         LevelManager.actualLevel++;
-    }    
-    void GetDirection()
-    {
-        int _x = (int)Input.GetAxisRaw("Horizontal");
-        int _y = (int)Input.GetAxisRaw("Vertical");
+    }
 
-        //Debug.Log(new Vector2(_x, _y).magnitude);
-        if (new Vector2(_x,_y).magnitude==1)
+    void PlayerInput()
+    {
+        if (Input.GetMouseButtonDown(0))
         {
-            if (_x == 0)
+            mousePos = Input.mousePosition;
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            Vector2 dir = (Vector2)Input.mousePosition - mousePos;
+            float _x = GetMag(dir.x);
+            float _y = GetMag(dir.y);
+            if (dir.magnitude > 100)
             {
-                if (_y > 0)
+                if (_x < _y)
                 {
-                    direction = Vector2.up;
-                    if (anim.GetInteger("Direction") != 1)
+                    if (dir.y > 0)
                     {
                         anim.SetInteger("Direction", 1);
-                        anim.SetTrigger("Turn");
+                        direction = Vector2.up;
                     }
+                    else if (dir.y < 0)
+                    {
+                        anim.SetInteger("Direction", 3);
+                        direction = Vector2.down;
+                    }
+                    else
+                    {
+                        direction = Vector2.zero;
+                    }
+                }
+                else if (_x > _y)
+                {
+                    if (dir.x > 0)
+                    {
+                        spr.flipX = false;
+                        anim.SetInteger("Direction", 2);
+                        direction = Vector2.right;
+                    }
+                    else if (dir.x < 0)
+                    {
+                        spr.flipX = true;
+                        anim.SetInteger("Direction", 4);
+                        direction = Vector2.left;
+                    }
+                    else
+                    {
+                        direction = Vector2.zero;
+                    }
+
                 }
                 else
                 {
-                    direction = Vector2.down;
-                    if (anim.GetInteger("Direction") != 3)
-                    {
-                        anim.SetInteger("Direction", 3);
-                        anim.SetTrigger("Turn");
-                    }
+                    direction = Vector2.zero;
                 }
             }
             else
             {
-                if (_x > 0)
-                {
-                    direction = Vector2.right;
-                    if (anim.GetInteger("Direction") != 2)
-                    {
-                        spr.flipX = false;
-                        anim.SetInteger("Direction", 2);
-                        anim.SetTrigger("Turn");
-                    }
-                }
-                else
-                {
-                    direction = Vector2.left;
-                    if (anim.GetInteger("Direction") != 4)
-                    {
-                        spr.flipX = true;
-                        anim.SetInteger("Direction", 4);
-                        anim.SetTrigger("Turn");
-                    }
-                }
+                direction = Vector2.zero;
             }
-            finalPos = transform.position + (Vector3)direction;
         }
-        else
+        finalPos = transform.position + (Vector3)direction;
+        anim.SetTrigger("Turn");
+    }
+    
+    float GetMag(float value)
+    {
+        float _x = value;
+        if (_x < 0)
         {
-            direction = Vector2.zero;
+            _x *= -1;
+        }
+        return _x;
+    }
+    public void DPad(string dir)
+    {
+        if (!walking)
+        {
+            switch (dir)
+            {
+                case "UP":
+                    anim.SetInteger("Direction", 1);
+                    direction = Vector2.up;
+                    break;
+                case "DOWN":
+                    anim.SetInteger("Direction", 3);
+                    direction = Vector2.down;
+                    break;
+                case "RIGHT":
+                    anim.SetInteger("Direction", 2);
+                    direction = Vector2.right;
+                    break;
+                case "LEFT":
+                    anim.SetInteger("Direction", 4);
+                    direction = Vector2.left;
+                    break;
+                default:
+                    direction = Vector2.zero;
+                    break;
+
+            }
+            spr.flipX = (dir == "LEFT");
+            finalPos = transform.position + (Vector3)direction;
+            if (direction != Vector2.zero)
+            {
+                anim.SetTrigger("Turn");
+            }
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class CustomButton : MonoBehaviour
 {
-    [SerializeField] UnityEvent click;
+    public UnityEvent click;
     bool down;
     Camera cam;
     private void Start()
@@ -14,7 +14,7 @@ public class CustomButton : MonoBehaviour
     }
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             down = true;
             /*
@@ -26,12 +26,13 @@ public class CustomButton : MonoBehaviour
             }
             */
         }
-        if (Input.GetMouseButtonUp(0))
+        else
         {
-            if (down)
-                click.Invoke();
+            
             down = false;
         }
+        if (down)
+            click.Invoke();
     }
     private void OnMouseExit()
     {
