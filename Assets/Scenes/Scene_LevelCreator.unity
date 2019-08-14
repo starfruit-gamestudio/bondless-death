@@ -191,7 +191,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1415522157}
         m_MethodName: SaveBytesToTxt
         m_Mode: 1
         m_Arguments:
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1415522157}
         m_MethodName: LoadSceneMainMenu
         m_Mode: 1
         m_Arguments:
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1415522157}
         m_MethodName: LoadSceneTest
         m_Mode: 1
         m_Arguments:
@@ -1138,6 +1138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1415522158}
+  - component: {fileID: 1415522157}
   m_Layer: 0
   m_Name: LevelCreatorManager
   m_TagString: Untagged
@@ -1145,6 +1146,56 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1415522157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415522156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1393733ad12695940bcb924c2d839fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 16
+  tilePrefab: {fileID: 2012812678009906844, guid: 421bcd3904ed4bc4ebe72cf912c60466,
+    type: 3}
+  selectedColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedSprite: {fileID: 0}
+  mainCamera: {fileID: 0}
+  objectPickUpPrefab: {fileID: 6839725160502099245, guid: 1dde4e55a629d3b41ba7f58f9b4c0c1b,
+    type: 3}
+  panelParent: {fileID: 1692124280}
+  colorsToShow:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0.8352942, g: 0.18039216, b: 0.18039216, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.3137255, g: 0.4784314, b: 0.79215693, a: 1}
+  - {r: 0.3529412, g: 0.22352943, b: 0.14901961, a: 1}
+  - {r: 0.5372549, g: 0.5372549, b: 0.5372549, a: 1}
+  - {r: 0.27450982, g: 0.7803922, b: 0.19215688, a: 1}
+  - {r: 0.18431373, g: 0.5137255, b: 0.12941177, a: 1}
+  - {r: 0.48627454, g: 0.043137256, b: 0.47450984, a: 1}
+  spritesAndColors:
+  - sprite: {fileID: 21300000, guid: fe4655e13add98f49aa557190b07f348, type: 3}
+    color: {r: 0, g: 0, b: 0, a: 1}
+  - sprite: {fileID: 21300000, guid: 7806cd71629930841b88cebfca3ba1f6, type: 3}
+    color: {r: 0.8352942, g: 0.18039216, b: 0.18039216, a: 1}
+  - sprite: {fileID: 21300122, guid: fe4655e13add98f49aa557190b07f348, type: 3}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - sprite: {fileID: 21300016, guid: 713583f7101bfc14cbed8b02289a5598, type: 3}
+    color: {r: 0.3137255, g: 0.4784314, b: 0.79215693, a: 1}
+  - sprite: {fileID: 0}
+    color: {r: 0.30980393, g: 0.19607845, b: 0.12941177, a: 1}
+  - sprite: {fileID: 21300092, guid: fe4655e13add98f49aa557190b07f348, type: 3}
+    color: {r: 0.5372549, g: 0.5372549, b: 0.5372549, a: 1}
+  - sprite: {fileID: 21300002, guid: 9e56b051cdb40264492be6e9c78d9b28, type: 3}
+    color: {r: 0.27450982, g: 0.7803922, b: 0.19215688, a: 1}
+  - sprite: {fileID: 21300020, guid: 0d003eb8d135ea241853cab677d07a59, type: 3}
+    color: {r: 0.18431373, g: 0.5137255, b: 0.12941177, a: 1}
+  - sprite: {fileID: 21300004, guid: af24b144edaebf442b454d2d74e4287d, type: 3}
+    color: {r: 0.48627454, g: 0.043137256, b: 0.47450984, a: 1}
 --- !u!4 &1415522158
 Transform:
   m_ObjectHideFlags: 0

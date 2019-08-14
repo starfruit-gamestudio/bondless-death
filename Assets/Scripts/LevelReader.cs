@@ -24,10 +24,11 @@ public class LevelReader : MonoBehaviour
 
     public void GetMap(string map)
     {
-        if (!File.Exists(System.Environment.SpecialFolder.MyDocuments + "\\GJP\\" + map + ".txt"))
+        if (!File.Exists(Path.Combine(Application.persistentDataPath, map + ".txt")))
             return;
 
-        string line = File.ReadAllText(System.Environment.SpecialFolder.MyDocuments + "\\GJP\\" + map + ".txt");
+        string line = File.ReadAllText(Path.Combine(Application.persistentDataPath, map + ".txt"));
+
         bs = line.Split(',');
         List<byte> b = new List<byte>();
         for (int i = 0; i < 1024; i++)
